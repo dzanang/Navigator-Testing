@@ -26,7 +26,7 @@ public class SearchLocationRate {
 	public void testSearchLocationRate() throws InterruptedException {
 		driver.get(baseUrl);
 		//due to system being designed in a way that ember provides IDs that are not constant, but rather refresh every so often,
-		//I have decided to no use ID in format "emberxxx" to target web elements.
+		//I have decided not to use IDs in format "emberxxx" and "metamorph-xxx-xx" to target web elements.
 		driver.findElement(By.id("header_search")).sendKeys("4 sobe"); 
 		driver.findElement(By.xpath("/html/body/div[4]/div/div/div[1]/div/div/span/span[2]/div/span/div[1]/p")).click();
 		driver.findElement(By.xpath("/html/body/div[4]/div/div/div[2]/div/div[1]/div/div[1]/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[1]/span[4]")).click();

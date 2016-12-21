@@ -54,7 +54,7 @@ public class ShareEvent {
 		Thread.sleep(2000); 
 		driver.findElement(By.id("loginbutton")).click();
 		Thread.sleep(2000);  //Same principle applies here for sleep timer.
-		newWindow(2);
+		newWindow(2); //previous window gets closed so we still end up with 2 windows, thus this being number 2 again.
 		driver.findElement(By.id("u_0_n")).sendKeys("Great Show");
 		driver.findElement(By.id("u_0_k")).click();
 		Thread.sleep(3000);
