@@ -59,7 +59,7 @@ public class ShareEvent {
 		driver.findElement(By.id("u_0_n")).sendKeys("Great Show");
 		driver.findElement(By.id("u_0_k")).click();
 		Thread.sleep(3000);
-		// driver.quit();
+		driver.quit();
 	}
 	
 	//In order to avoid the mess with window handles, this method assigns numbers to each window that gets opened
